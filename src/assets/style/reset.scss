@@ -1,0 +1,170 @@
+:root {
+  /* 🎨 Palette Colori */
+  --primary: oklch(51.01% 0.274 263.83); /* Bright Blue */
+  --secondary: oklch(53.18% 0.28 296.97); /* Electric Violet */
+  --accent: oklch(69.02% 0.277 332.77); /* Vivid Pink */
+  --danger: oklch(61.42% 0.238 15.34); /* Hot Red */
+  --warning: oklch(63.32% 0.24 31.68); /* Orange Red */
+
+  /* 🎨 Grayscale */
+  --gray-900: oklch(19.37% 0.006 300.98);
+  --gray-700: oklch(36.98% 0.014 302.71);
+  --gray-400: oklch(70.9% 0.015 304.04);
+
+  /* 🎨 Gradienti */
+  --gradient-primary: linear-gradient(90deg, var(--warning) 0%, var(--accent) 50%, var(--secondary) 100%);
+
+  /* 🖋️ Tipografia */
+  --font-body: "Inter", sans-serif;
+  --font-heading: "Inter Tight", sans-serif;
+
+  /* 📐 Layout */
+  --container-width: 1200px;
+  --border-radius: 8px;
+}
+
+/* ====== Reset e Base ====== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--gray-900);
+  background-color: white;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, strong, em, blockquote {
+  all: unset;
+  display: block;
+}
+
+h1 { font-size: 2.5rem; font-weight: 600; letter-spacing: -0.05rem; }
+h2 { font-size: 2rem; font-weight: 600; }
+h3 { font-size: 1.75rem; font-weight: 500; }
+h4 { font-size: 1.5rem; font-weight: 500; }
+h5 { font-size: 1.25rem; font-weight: 500; }
+h6 { font-size: 1rem; font-weight: 500; }
+
+p { font-size: 1rem; font-weight: 400; color: var(--gray-700); margin-bottom: 1rem; }
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  all: unset;
+  list-style: none;
+}
+
+button, input, textarea, select {
+  all: unset;
+  font: inherit;
+  cursor: pointer;
+}
+
+img, svg, video, canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* ====== Layout ====== */
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+/* ====== Componenti ====== */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: color-mix(in srgb, var(--primary) 15%, black);
+}
+
+.btn-secondary {
+  background: var(--secondary);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: color-mix(in srgb, var(--secondary) 15%, black);
+}
+
+/* ====== Utility ====== */
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+
+.text-center { text-align: center; }
+.text-bold { font-weight: bold; }
+
+.rounded { border-radius: var(--border-radius); }
+
+/* ====== Scrollbar ====== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--gray-400);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--gray-700);
+}

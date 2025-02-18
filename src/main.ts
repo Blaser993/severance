@@ -1,6 +1,14 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
+import { provideRouter } from '@angular/router';
 import { AppComponent } from './app/app.component';
+import { HomeComponent } from './app/views/home/home.component';
+import { AboutComponent } from './app/views/about/about.component';
 
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
+const routes = [
+  { path: '', component: HomeComponent }, // Homepage
+  { path: 'about', component: AboutComponent }, // Pagina About
+];
+
+bootstrapApplication(AppComponent, {
+  providers: [provideRouter(routes)],
+});
