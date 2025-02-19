@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -10,4 +10,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'severance';
+ 
+
+
 }
