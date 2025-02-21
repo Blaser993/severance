@@ -31,7 +31,7 @@ const routes = [
       import('./app/views/about/about.component').then((m) => m.AboutComponent),
   }, // Pagina About
   {
-    path: 'mr',
+    path: 'mdr',
     loadComponent: () =>
       import('./app/views/macrodatarefinement/macrodatarefinement.component').then(
         (m) => m.MacrodatarefinementComponent

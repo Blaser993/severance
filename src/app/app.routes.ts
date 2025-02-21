@@ -6,5 +6,5 @@ import { MacrodatarefinementComponent } from './views/macrodatarefinement/macrod
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'mr', component: MacrodatarefinementComponent },
+  { path: 'mdr', component: MacrodatarefinementComponent },
 ];

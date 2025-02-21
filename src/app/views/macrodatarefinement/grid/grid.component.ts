@@ -9,5 +9,6 @@ import { CommonModule } from '@angular/common';
   styleUrl: './grid.component.scss'
 })
 export class GridComponent {
-  sides = Array(12)
+  rows = Array(12)
+  cols = Array(14)
 }

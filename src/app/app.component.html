@@ -1,17 +1,19 @@
 
-<header class="row">
-  <nav class="row ">
-    <a class="btn mx-2 my-1 btn-primary col-6" routerLink="/">Home</a>
-    <a class="btn mx-2 my-1  btn-secondary  col-6" routerLink="/mr">Macrodata Refinement</a>
-  </nav>
-</header>
+<div class="row align-content-between w-100 p-0 m-0">
 
-<div>
-  <router-outlet></router-outlet>
+  <header class="position-absolute top-0 start-0 w-100" style="z-index: 10;">
+    <a class="col-auto p-3" routerLink="/">Home</a>
+    <a class="col-auto p-3" routerLink="/mdr">Macrodata Refinement</a>
+  </header>
+
+<div class="w-100 h-100 position-relative m-0 p-0" style="z-index: 100;">
+  <router-outlet ></router-outlet>
 </div>
-<footer>
-  <a routerLink="/about">About</a>
-</footer>
+
+  <footer class="position-absolute bottom-0 start-0 w-100" style="z-index: 10;">
+   <a routerLink="/about">About</a>
+  </footer>
+</div>
 
 
 

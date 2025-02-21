@@ -2,10 +2,13 @@ section{
     padding: 0;
     margin:0;
     display: inline-block;
-    width: 4rem;
+    width: 2rem;
     aspect-ratio: 1;
     line-height: 1rem;
     border: 1px solid black;
     align-content: center;
     justify-items: center;
+    *{
+        cursor: default;
+    }
 }

@@ -1,13 +1,17 @@
-<div class="grid-wrapper container py-3 px-3 my-3 mx-3">
 
-    <div class="grid">
+
+ <div class="w-100 row m-0 p-0">
+
+   <div class=" col-auto mx-auto p-0">
+
+     <div  *ngFor="let row of rows">
+       <app-cell class="" *ngFor="let col of cols">
+        
+       </app-cell>
+     </div>
+   </div>
+
+ </div>
     
-      <div *ngFor="let rows of sides">
-        <app-cell *ngFor="let cols of sides">
-         
-        </app-cell>
-      </div>
-    </div>
-    
-    </div>
+
     
