@@ -1,15 +1,17 @@
 
 
- <div class="w-100 row m-0 p-0">
+ <div class="h-100 w-100  m-0 p-0" style="overflow: auto;">
 
-   <div class=" col-auto mx-auto p-0">
+  <div class=" w-100 h-100 d-flex no-wrap p-0 m-0"  style="overflow: auto;">
 
-     <div  *ngFor="let row of rows">
-       <app-cell class="" *ngFor="let col of cols">
-        
-       </app-cell>
-     </div>
-   </div>
+    <div  *ngFor="let col of cols"  >
+      <app-cell  *ngFor="let row of rows">
+       
+      </app-cell>
+    </div>
+  </div>
+
+
 
  </div>
     

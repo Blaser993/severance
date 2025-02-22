@@ -2,12 +2,15 @@ section{
     padding: 0;
     margin:0;
     display: inline-block;
-    width: 2rem;
+    width: 4rem;
     aspect-ratio: 1;
     line-height: 1rem;
     border: 1px solid black;
     align-content: center;
     justify-items: center;
+    h5{
+        font-size: 1.5rem
+    }
     *{
         cursor: default;
     }

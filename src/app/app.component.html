@@ -1,19 +1,14 @@
+<header class="position-absolute top-0 start-0 w-100" style="z-index: 10;">
+  <a class="col-auto p-3" routerLink="/">Home</a>
+  <a class="col-auto p-3" routerLink="/mdr">Macrodata Refinement</a>
+</header>
 
-<div class="row align-content-between w-100 p-0 m-0">
 
-  <header class="position-absolute top-0 start-0 w-100" style="z-index: 10;">
-    <a class="col-auto p-3" routerLink="/">Home</a>
-    <a class="col-auto p-3" routerLink="/mdr">Macrodata Refinement</a>
-  </header>
 
 <div class="w-100 h-100 position-relative m-0 p-0" style="z-index: 100;">
   <router-outlet ></router-outlet>
 </div>
 
-  <footer class="position-absolute bottom-0 start-0 w-100" style="z-index: 10;">
-   <a routerLink="/about">About</a>
-  </footer>
-</div>
-
-
-
+<footer class="position-absolute bottom-0 start-0 w-100" style="z-index: 10;">
+ <a routerLink="/about">About</a>
+</footer>
